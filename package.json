@@ -1,0 +1,27 @@
+{
+  "name": "directus-cicd",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npx directus bootstrap",
+    "snapshot:create": "npx directus schema snapshot --yes ./snapshots/latest.yaml && git stage ./snapshots/latest.yaml",
+    "snapshot:commit": "npm run snapshot:create && git stage ./snapshots/latest.yaml",
+    "snapshot:check": "npx directus schema apply --dry-run ./snapshots/latest.yaml",
+    "snapshot:apply": "npx directus schema apply --yes ./snapshots/latest.yaml",
+    "prepare": "npm run bootstrap && npm run snapshot:apply",
+    "start": "npx directus start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "directus": "^9.17.1",
+    "mysql": "^2.18.1",
+    "npx": "^10.2.2",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "snapshot:commit"
+  ]
+}

@@ -1,0 +1,434 @@
+version: 1
+directus: 9.17.1
+collections: []
+fields:
+  - collection: directus_users
+    field: address1
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: address1
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Address 1
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: address1
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: address2
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: address2
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Address 2
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: address2
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: city
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: city
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: City
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: city
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: companyName
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: companyName
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Company Name
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: companyName
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: country
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: country
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Country
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: country
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: county
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: county
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: County
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: county
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: externalRef
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: externalRef
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: External Ref.
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: externalRef
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: outbidEmailsOk
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: outbidEmailsOk
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: bit
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 1
+      name: outbidEmailsOk
+      numeric_precision: 1
+      numeric_scale: null
+      table: directus_users
+    type: boolean
+  - collection: directus_users
+    field: postalcode
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: postalcode
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Postal Code
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: postalcode
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: telephone
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: telephone
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Telephone
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: telephone
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: username
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: username
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: Username
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      data_type: nvarchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: username
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+relations: []
