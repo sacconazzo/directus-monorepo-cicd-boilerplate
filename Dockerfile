@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm ci
-RUN yarn prepare
+RUN yarn db:prepare
 
 COPY . /usr/src/app
 

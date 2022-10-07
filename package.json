@@ -9,7 +9,7 @@
     "snapshot:commit": "npm run snapshot:create && git stage ./snapshots/latest.yaml",
     "snapshot:check": "npx directus schema apply --dry-run ./snapshots/latest.yaml",
     "snapshot:apply": "npx directus schema apply --yes ./snapshots/latest.yaml",
-    "prepare": "npm run bootstrap && npm run snapshot:apply",
+    "db:prepare": "npm run bootstrap && npm run snapshot:apply",
     "start": "npx directus start"
   },
   "keywords": [],

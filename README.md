@@ -7,10 +7,10 @@
 
 ## CI/CD
 
-- `yarn prepare`
+- `yarn db:prepare`
 - `yarn start`
 
 ## Others
 
 - `yarn snapshot:create` Create e new snapshot
-- `yarn prepare:check` Print-out the planned changes (only from snapshot, not migrations)
+- `yarn db:prepare:check` Print-out the planned changes (only from snapshot, not migrations)
