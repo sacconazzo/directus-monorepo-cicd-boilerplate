@@ -1,17 +1,27 @@
-FROM node:16
+FROM node:16.17.0-alpine3.16
 
-# Create app directory
-WORKDIR /usr/src/app
+RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
+RUN npm install -g pnpm
 
+<<<<<<< HEAD
 RUN npm ci
 RUN yarn db:prepare
+=======
+WORKDIR /directus
+>>>>>>> master
 
-COPY . /usr/src/app
+# Create data directories
+RUN mkdir -p \
+    database \
+    extensions \
+    uploads
 
-EXPOSE $PORT
-CMD [ "yarn", "start" ]
+COPY package.json .
+COPY pnpm-*.yaml .
+
+RUN pnpm install --prod
+
+COPY . .
+
+CMD pnpm db:prepare && pnpm start
