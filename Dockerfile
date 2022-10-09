@@ -4,12 +4,7 @@ RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata
 
 RUN npm install -g pnpm
 
-<<<<<<< HEAD
-RUN npm ci
-RUN yarn db:prepare
-=======
 WORKDIR /directus
->>>>>>> master
 
 # Create data directories
 RUN mkdir -p \
