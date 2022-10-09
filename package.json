@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "npx directus bootstrap",
-    "snapshot:create": "npx directus schema snapshot --yes ./snapshots/latest.yaml && git stage ./snapshots/latest.yaml",
-    "snapshot:commit": "npm run snapshot:create && git stage ./snapshots/latest.yaml",
-    "snapshot:check": "npx directus schema apply --dry-run ./snapshots/latest.yaml",
-    "snapshot:apply": "npx directus schema apply --yes ./snapshots/latest.yaml",
-    "prepare": "npm run bootstrap && npm run snapshot:apply",
-    "start": "npx directus start"
+    "bootstrap": "pnpm directus bootstrap",
+    "snapshot:create": "pnpm directus schema snapshot --yes ./snapshots/latest.yaml && git stage ./snapshots/latest.yaml",
+    "snapshot:commit": "pnpm snapshot:create && git stage ./snapshots/latest.yaml",
+    "snapshot:check": "pnpm directus schema apply --dry-run ./snapshots/latest.yaml",
+    "snapshot:apply": "pnpm directus schema apply --yes ./snapshots/latest.yaml",
+    "db:prepare": "pnpm bootstrap && pnpm snapshot:apply",
+    "start": "pnpm directus start"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,6 @@
   "dependencies": {
     "directus": "^9.17.1",
     "mysql": "^2.18.1",
-    "npx": "^10.2.2",
     "pre-commit": "^1.2.2"
   },
   "pre-commit": [
