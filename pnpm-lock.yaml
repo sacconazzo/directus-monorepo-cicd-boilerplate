@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  directus: ^9.17.1
+  directus: ^9.18.1
   mysql: ^2.18.1
   pre-commit: ^1.2.2
 
