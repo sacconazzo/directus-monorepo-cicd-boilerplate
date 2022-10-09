@@ -4,11 +4,13 @@ specifiers:
   directus: ^9.18.1
   mysql: ^2.18.1
   pre-commit: ^1.2.2
+  swagger-ui-express: ^4.5.0
 
 dependencies:
   directus: 9.18.1_typescript@4.8.4
   mysql: 2.18.1
   pre-commit: 1.2.2
+  swagger-ui-express: 4.5.0_express@4.18.2
 
 packages:
 
@@ -7094,6 +7096,20 @@ packages:
       csso: 4.2.0
       picocolors: 1.0.0
       stable: 0.1.8
+    dev: false
+
+  /swagger-ui-dist/4.14.2:
+    resolution: {integrity: sha512-kOIU7Ts3TrXDLb3/c9jRe4qGp8O3bRT19FFJA8wJfrRFkcK/4atPn3krhtBVJ57ZkNNofworXHxuYwmaisXBdg==}
+    dev: false
+
+  /swagger-ui-express/4.5.0_express@4.18.2:
+    resolution: {integrity: sha512-DHk3zFvsxrkcnurGvQlAcLuTDacAVN1JHKDgcba/gr2NFRE4HGwP1YeHIXMiGznkWR4AeS7X5vEblNn4QljuNA==}
+    engines: {node: '>= v0.10.32'}
+    peerDependencies:
+      express: '>=4.0.0'
+    dependencies:
+      express: 4.18.2
+      swagger-ui-dist: 4.14.2
     dev: false
 
   /tar-fs/2.1.1:

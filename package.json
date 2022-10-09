@@ -1,8 +1,7 @@
 {
   "name": "directus-cicd",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "directus on google cloud run",
   "scripts": {
     "bootstrap": "pnpm directus bootstrap",
     "snapshot:create": "pnpm directus schema snapshot --yes ./snapshots/latest.yaml && git stage ./snapshots/latest.yaml",
@@ -18,7 +17,8 @@
   "dependencies": {
     "directus": "^9.18.1",
     "mysql": "^2.18.1",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "swagger-ui-express": "^4.5.0"
   },
   "pre-commit": [
     "snapshot:commit"
