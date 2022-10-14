@@ -4,7 +4,7 @@ services:
     build: .
     container_name: directus-cicd
     volumes:
-      - ../directus_share:/uploads:rw
+      - ../directus_share:/uploads
     env_file:
       - ../configs/directus.env
     image: sacconazzo/directus-cicd
