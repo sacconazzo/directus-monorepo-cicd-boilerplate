@@ -4,7 +4,7 @@ const { Command } = require('commander')
 const program = new Command()
 const { migrate } = require('./migrate')
 
-program.name('string-util').description('Directus & bidjs utilities').version('0.1.0')
+program.name('string-util').description('Directus utilities').version('0.1.0')
 
 program
   .command('migrate')
