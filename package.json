@@ -24,6 +24,9 @@
   },
   "pre-commit": [],
   "devDependencies": {
+    "commander": "^9.4.1",
+    "dotenv-safe": "^8.2.0",
+    "knex": "^2.3.0",
     "pre-commit": "^1.2.2"
   }
 }
