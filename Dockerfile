@@ -17,6 +17,6 @@ COPY pnpm-*.yaml .
 
 RUN pnpm install --prod
 
-COPY . .
+COPY . /directus
 
 CMD pnpm start
