@@ -1,4 +1,4 @@
-# Directus BackOffice
+# Back-end server with web interface (byDirectus)
 
 ## Initialize
 
