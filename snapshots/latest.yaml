@@ -1,7 +1,1467 @@
 version: 1
-directus: 9.17.1
-collections: []
+directus: 9.18.1
+collections:
+  - collection: aste
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: aste
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: Gestione e collegamenti al servizio
+      singleton: true
+      sort: null
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: aste
+      schema: directus
+  - collection: blog
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: blog
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: Blog e Storytelling
+      singleton: false
+      sort: 6
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: blog
+      schema: directus
+  - collection: boutique
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: boutique
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: Descrizione Store Principali
+      singleton: false
+      sort: 3
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: boutique
+      schema: directus
+  - collection: brand
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: brand
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: DeAngelis Brand
+      singleton: true
+      sort: 2
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: brand
+      schema: directus
+  - collection: contatti
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: contatti
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: Contatti
+      singleton: true
+      sort: 7
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: contatti
+      schema: directus
+  - collection: landing_page
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: landing_page
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: Pagina Principale
+      singleton: true
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: landing_page
+      schema: directus
+  - collection: news
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: closed
+      collection: news
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: News & Press
+      singleton: false
+      sort: 4
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: news
+      schema: directus
+  - collection: site_contents
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: site_contents
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: folder
+      item_duplication_fields: null
+      note: Contenuto del sito
+      singleton: false
+      sort: 1
+      sort_field: null
+      translations: null
+      unarchive_value: null
+    schema: null
+  - collection: team
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: team
+      color: null
+      display_template: null
+      group: site_contents
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: Membri dello staff
+      singleton: false
+      sort: 5
+      sort_field: null
+      translations: null
+      unarchive_value: draft
+    schema:
+      collation: latin1_swedish_ci
+      comment: ''
+      engine: InnoDB
+      name: team
+      schema: directus
 fields:
+  - collection: aste
+    field: date_updated
+    meta:
+      collection: aste
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: aste
+    type: timestamp
+  - collection: aste
+    field: id
+    meta:
+      collection: aste
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: aste
+    type: integer
+  - collection: aste
+    field: links-ckwc_6
+    meta:
+      collection: aste
+      field: links-ckwc_6
+      special:
+        - alias
+        - no-data
+      interface: presentation-links
+      options:
+        links:
+          - url: https://brighton.eu-central-1.bidjs.com/ms-authserver/login
+            icon: open_in_new
+            type: normal
+            label: bidjs
+      display: null
+      display_options: null
+      readonly: false
+      hidden: false
+      sort: null
+      width: full
+      translations: null
+      note: null
+      conditions: null
+      required: false
+      group: null
+      validation: null
+      validation_message: null
+    schema: null
+    type: alias
+  - collection: aste
+    field: user_updated
+    meta:
+      collection: aste
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: aste
+    type: string
+  - collection: blog
+    field: contenuto
+    meta:
+      collection: blog
+      conditions: null
+      display: null
+      display_options: null
+      field: contenuto
+      group: null
+      hidden: false
+      interface: input-multiline
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: contenuto
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: text
+  - collection: blog
+    field: data
+    meta:
+      collection: blog
+      conditions: null
+      display: null
+      display_options: null
+      field: data
+      group: null
+      hidden: false
+      interface: datetime
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: datetime
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: data
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: dateTime
+  - collection: blog
+    field: date_created
+    meta:
+      collection: blog
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_created
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: timestamp
+  - collection: blog
+    field: date_updated
+    meta:
+      collection: blog
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: timestamp
+  - collection: blog
+    field: id
+    meta:
+      collection: blog
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: blog
+    type: integer
+  - collection: blog
+    field: status
+    meta:
+      collection: blog
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            background: var(--primary)
+            foreground: '#FFFFFF'
+          - text: $t:draft
+            value: draft
+            background: '#D3DAE4'
+            foreground: '#18222F'
+          - text: $t:archived
+            value: archived
+            background: var(--warning)
+            foreground: '#FFFFFF'
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: draft
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: false
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: status
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: string
+  - collection: blog
+    field: titolo
+    meta:
+      collection: blog
+      conditions: null
+      display: null
+      display_options: null
+      field: titolo
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: titolo
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: string
+  - collection: blog
+    field: user_created
+    meta:
+      collection: blog
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_created
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: string
+  - collection: blog
+    field: user_updated
+    meta:
+      collection: blog
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: blog
+    type: string
+  - collection: boutique
+    field: date_created
+    meta:
+      collection: boutique
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_created
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: timestamp
+  - collection: boutique
+    field: date_updated
+    meta:
+      collection: boutique
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: timestamp
+  - collection: boutique
+    field: descrizione
+    meta:
+      collection: boutique
+      conditions: null
+      display: null
+      display_options: null
+      field: descrizione
+      group: null
+      hidden: false
+      interface: input-multiline
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: descrizione
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: text
+  - collection: boutique
+    field: id
+    meta:
+      collection: boutique
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: boutique
+    type: integer
+  - collection: boutique
+    field: nome
+    meta:
+      collection: boutique
+      conditions: null
+      display: null
+      display_options: null
+      field: nome
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: nome
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: string
+  - collection: boutique
+    field: status
+    meta:
+      collection: boutique
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            background: var(--primary)
+            foreground: '#FFFFFF'
+          - text: $t:draft
+            value: draft
+            background: '#D3DAE4'
+            foreground: '#18222F'
+          - text: $t:archived
+            value: archived
+            background: var(--warning)
+            foreground: '#FFFFFF'
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: draft
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: false
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: status
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: string
+  - collection: boutique
+    field: user_created
+    meta:
+      collection: boutique
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_created
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: string
+  - collection: boutique
+    field: user_updated
+    meta:
+      collection: boutique
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: boutique
+    type: string
+  - collection: brand
+    field: date_updated
+    meta:
+      collection: brand
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: brand
+    type: timestamp
+  - collection: brand
+    field: descrizione_brand
+    meta:
+      collection: brand
+      conditions: null
+      display: null
+      display_options: null
+      field: descrizione_brand
+      group: null
+      hidden: false
+      interface: input-multiline
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: descrizione_brand
+      numeric_precision: null
+      numeric_scale: null
+      table: brand
+    type: text
+  - collection: brand
+    field: id
+    meta:
+      collection: brand
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: brand
+    type: integer
+  - collection: brand
+    field: user_updated
+    meta:
+      collection: brand
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: brand
+    type: string
+  - collection: contatti
+    field: date_updated
+    meta:
+      collection: contatti
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: contatti
+    type: timestamp
+  - collection: contatti
+    field: id
+    meta:
+      collection: contatti
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: contatti
+    type: integer
+  - collection: contatti
+    field: indirizzo
+    meta:
+      collection: contatti
+      conditions: null
+      display: null
+      display_options: null
+      field: indirizzo
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: indirizzo
+      numeric_precision: null
+      numeric_scale: null
+      table: contatti
+    type: string
+  - collection: contatti
+    field: telefono
+    meta:
+      collection: contatti
+      conditions: null
+      display: null
+      display_options: null
+      field: telefono
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: telefono
+      numeric_precision: null
+      numeric_scale: null
+      table: contatti
+    type: string
+  - collection: contatti
+    field: user_updated
+    meta:
+      collection: contatti
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: contatti
+    type: string
   - collection: directus_users
     field: address1
     meta:
@@ -15,17 +1475,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Address 1
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: Address 1
+        - language: it-IT
+          translation: Indirizzo 1
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -54,17 +1519,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Address 2
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: Address 1
+        - language: it-IT
+          translation: Indirizzo 2
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -93,17 +1563,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: City
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: City
+        - language: it-IT
+          translation: Città
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -115,6 +1590,94 @@ fields:
       is_unique: false
       max_length: 255
       name: city
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: companyAddress
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: companyAddress
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations:
+        - language: en-US
+          translation: Company Address
+        - language: it-IT
+          translation: Indirizzo Società
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: companyAddress
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: companyCountry
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: companyCountry
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        placeholder: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations:
+        - language: en-US
+          translation: Company Country
+        - language: it-IT
+          translation: Paese Società
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: companyCountry
       numeric_precision: null
       numeric_scale: null
       table: directus_users
@@ -132,17 +1695,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Company Name
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: Company Name
+        - language: it-IT
+          translation: Nome Società
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -171,17 +1739,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Country
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: Country
+        - language: it-IT
+          translation: Paese
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -210,17 +1783,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: County
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: County
+        - language: it-IT
+          translation: Regione
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -232,6 +1810,49 @@ fields:
       is_unique: false
       max_length: 255
       name: county
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: cuu
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: cuu
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations:
+        - language: en-US
+          translation: CUU
+        - language: it-IT
+          translation: CUU
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: cuu
       numeric_precision: null
       numeric_scale: null
       table: directus_users
@@ -249,17 +1870,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: External Ref.
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: External Ref.
+        - language: it-IT
+          translation: Riferimento esterno
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -271,6 +1897,49 @@ fields:
       is_unique: false
       max_length: 255
       name: externalRef
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: fiscalCode
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: fiscalCode
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations:
+        - language: en-US
+          translation: Fiscal Code
+        - language: it-IT
+          translation: Codice Fiscale
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: fiscalCode
       numeric_precision: null
       numeric_scale: null
       table: directus_users
@@ -293,12 +1962,17 @@ fields:
       sort: null
       special:
         - cast-boolean
-      translations: null
+      translations:
+        - language: en-US
+          translation: Outbid email
+        - language: it-IT
+          translation: Notifica offerta rilancio
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: bit
+      comment: ''
+      data_type: boolean
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -308,10 +1982,10 @@ fields:
       is_nullable: true
       is_primary_key: false
       is_unique: false
-      max_length: 1
+      max_length: null
       name: outbidEmailsOk
-      numeric_precision: 1
-      numeric_scale: null
+      numeric_precision: 3
+      numeric_scale: 0
       table: directus_users
     type: boolean
   - collection: directus_users
@@ -327,17 +2001,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Postal Code
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: Postal Code
+        - language: it-IT
+          translation: Codice Postale
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -366,17 +2045,22 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Telephone
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: it-IT
+          translation: Telefono
+        - language: en-US
+          translation: Phone Number
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -405,17 +2089,65 @@ fields:
       interface: input
       note: null
       options:
-        placeholder: Username
+        placeholder: null
       readonly: false
       required: false
       sort: null
       special: null
-      translations: null
+      translations:
+        - language: en-US
+          translation: Username
+        - language: it-IT
+          translation: Nome utente
       validation: null
       validation_message: null
       width: full
     schema:
-      data_type: nvarchar
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: true
+      max_length: 255
+      name: username
+      numeric_precision: null
+      numeric_scale: null
+      table: directus_users
+    type: string
+  - collection: directus_users
+    field: vat
+    meta:
+      collection: directus_users
+      conditions: null
+      display: null
+      display_options: null
+      field: vat
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations:
+        - language: en-US
+          translation: VAT
+        - language: it-IT
+          translation: IVA
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
       default_value: null
       foreign_key_column: null
       foreign_key_table: null
@@ -426,9 +2158,1264 @@ fields:
       is_primary_key: false
       is_unique: false
       max_length: 255
-      name: username
+      name: vat
       numeric_precision: null
       numeric_scale: null
       table: directus_users
     type: string
-relations: []
+  - collection: landing_page
+    field: background_image
+    meta:
+      collection: landing_page
+      conditions: null
+      display: null
+      display_options: null
+      field: background_image
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: background_image
+      numeric_precision: null
+      numeric_scale: null
+      table: landing_page
+    type: uuid
+  - collection: landing_page
+    field: date_updated
+    meta:
+      collection: landing_page
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: landing_page
+    type: timestamp
+  - collection: landing_page
+    field: id
+    meta:
+      collection: landing_page
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: landing_page
+    type: integer
+  - collection: landing_page
+    field: intestazione
+    meta:
+      collection: landing_page
+      conditions: null
+      display: null
+      display_options: null
+      field: intestazione
+      group: null
+      hidden: false
+      interface: input-multiline
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: intestazione
+      numeric_precision: null
+      numeric_scale: null
+      table: landing_page
+    type: text
+  - collection: landing_page
+    field: user_updated
+    meta:
+      collection: landing_page
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: landing_page
+    type: string
+  - collection: news
+    field: data_news
+    meta:
+      collection: news
+      conditions: null
+      display: null
+      display_options: null
+      field: data_news
+      group: null
+      hidden: false
+      interface: datetime
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: datetime
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: data_news
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: dateTime
+  - collection: news
+    field: date_created
+    meta:
+      collection: news
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_created
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: timestamp
+  - collection: news
+    field: date_updated
+    meta:
+      collection: news
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: timestamp
+  - collection: news
+    field: descrizione
+    meta:
+      collection: news
+      conditions: null
+      display: null
+      display_options: null
+      field: descrizione
+      group: null
+      hidden: false
+      interface: input-multiline
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: descrizione
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: text
+  - collection: news
+    field: id
+    meta:
+      collection: news
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: news
+    type: integer
+  - collection: news
+    field: status
+    meta:
+      collection: news
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            background: var(--primary)
+            foreground: '#FFFFFF'
+          - text: $t:draft
+            value: draft
+            background: '#D3DAE4'
+            foreground: '#18222F'
+          - text: $t:archived
+            value: archived
+            background: var(--warning)
+            foreground: '#FFFFFF'
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: draft
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: false
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: status
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: string
+  - collection: news
+    field: titolo
+    meta:
+      collection: news
+      conditions: null
+      display: null
+      display_options: null
+      field: titolo
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: titolo
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: text
+  - collection: news
+    field: user_created
+    meta:
+      collection: news
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_created
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: string
+  - collection: news
+    field: user_updated
+    meta:
+      collection: news
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: news
+    type: string
+  - collection: team
+    field: date_created
+    meta:
+      collection: team
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_created
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: timestamp
+  - collection: team
+    field: date_updated
+    meta:
+      collection: team
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: timestamp
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: null
+      name: date_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: timestamp
+  - collection: team
+    field: foto
+    meta:
+      collection: team
+      conditions: null
+      display: null
+      display_options: null
+      field: foto
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: foto
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: uuid
+  - collection: team
+    field: id
+    meta:
+      collection: team
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: int unsigned
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: true
+      is_generated: false
+      is_nullable: false
+      is_primary_key: true
+      is_unique: false
+      max_length: null
+      name: id
+      numeric_precision: 10
+      numeric_scale: 0
+      table: team
+    type: integer
+  - collection: team
+    field: informazioni
+    meta:
+      collection: team
+      conditions: null
+      display: null
+      display_options: null
+      field: informazioni
+      group: null
+      hidden: false
+      interface: input-multiline
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: text
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 65535
+      name: informazioni
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: text
+  - collection: team
+    field: nome
+    meta:
+      collection: team
+      conditions: null
+      display: null
+      display_options: null
+      field: nome
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: null
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: nome
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: string
+  - collection: team
+    field: status
+    meta:
+      collection: team
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            background: var(--primary)
+            foreground: '#FFFFFF'
+          - text: $t:draft
+            value: draft
+            background: '#D3DAE4'
+            foreground: '#18222F'
+          - text: $t:archived
+            value: archived
+            background: var(--warning)
+            foreground: '#FFFFFF'
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: null
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      comment: ''
+      data_type: varchar
+      default_value: draft
+      foreign_key_column: null
+      foreign_key_table: null
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: false
+      is_primary_key: false
+      is_unique: false
+      max_length: 255
+      name: status
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: string
+  - collection: team
+    field: user_created
+    meta:
+      collection: team
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_created
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: string
+  - collection: team
+    field: user_updated
+    meta:
+      collection: team
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: null
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      comment: ''
+      data_type: char
+      default_value: null
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      generation_expression: null
+      has_auto_increment: false
+      is_generated: false
+      is_nullable: true
+      is_primary_key: false
+      is_unique: false
+      max_length: 36
+      name: user_updated
+      numeric_precision: null
+      numeric_scale: null
+      table: team
+    type: string
+relations:
+  - collection: aste
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: aste
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: aste_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: aste
+  - collection: blog
+    field: user_created
+    meta:
+      junction_field: null
+      many_collection: blog
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_created
+      constraint_name: blog_user_created_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: blog
+  - collection: blog
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: blog
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: blog_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: blog
+  - collection: boutique
+    field: user_created
+    meta:
+      junction_field: null
+      many_collection: boutique
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_created
+      constraint_name: boutique_user_created_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: boutique
+  - collection: boutique
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: boutique
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: boutique_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: boutique
+  - collection: brand
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: brand
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: brand_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: brand
+  - collection: contatti
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: contatti
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: contatti_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: contatti
+  - collection: landing_page
+    field: background_image
+    meta:
+      junction_field: null
+      many_collection: landing_page
+      many_field: background_image
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_files
+    schema:
+      column: background_image
+      constraint_name: landing_page_background_image_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      on_delete: SET NULL
+      on_update: RESTRICT
+      table: landing_page
+  - collection: landing_page
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: landing_page
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: landing_page_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: landing_page
+  - collection: news
+    field: user_created
+    meta:
+      junction_field: null
+      many_collection: news
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_created
+      constraint_name: news_user_created_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: news
+  - collection: news
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: news
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: news_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: news
+  - collection: team
+    field: foto
+    meta:
+      junction_field: null
+      many_collection: team
+      many_field: foto
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_files
+    schema:
+      column: foto
+      constraint_name: team_foto_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_files
+      on_delete: SET NULL
+      on_update: RESTRICT
+      table: team
+  - collection: team
+    field: user_created
+    meta:
+      junction_field: null
+      many_collection: team
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_created
+      constraint_name: team_user_created_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: team
+  - collection: team
+    field: user_updated
+    meta:
+      junction_field: null
+      many_collection: team
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    related_collection: directus_users
+    schema:
+      column: user_updated
+      constraint_name: team_user_updated_foreign
+      foreign_key_column: id
+      foreign_key_table: directus_users
+      on_delete: RESTRICT
+      on_update: RESTRICT
+      table: team

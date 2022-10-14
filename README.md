@@ -5,12 +5,25 @@
 - create a new db
 - configure .env file like .env.example
 
-## CI/CD
+## Installation and CI
 
-- `pnpm db:prepare`
-- `pnpm start`
+Preparing db with Directus setup, snapshot and migrations & running service:
+
+    pnpm start
+
+Running service (no installation):
+
+    pnpm start:only
+
+## Utils CLI
+
+Utilities scripts (bidjs signature, create roles migrations, ...):
+
+    pnpm utils --help
 
 ## Others
 
+Some scripts:
+
 - `pnpm snapshot:create` Create e new snapshot
-- `pnpm db:prepare:check` Print-out the planned changes (only from snapshot, not migrations)
+- `pnpm snapshot:check` Print-out the planned changes (only from snapshot, not migrations)

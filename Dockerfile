@@ -19,4 +19,4 @@ RUN pnpm install --prod
 
 COPY . .
 
-CMD pnpm db:prepare && pnpm start
+CMD pnpm start

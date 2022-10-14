@@ -1,16 +1,8 @@
 const swaggerUi = require('swagger-ui-express')
+const root = require('find-root')()
+const package = require(`${root}/package.json`)
 
 module.exports = function registerEndpoint(router, { services, exceptions }) {
-  // const { ForbiddenException } = exceptions
-
-  //   router.use((req, res, next) => {
-  //     if (!req.accountability.user) {
-  //       throw new ForbiddenException()
-  //     } else {
-  //       next()
-  //     }
-  //   })
-
   const { ServiceUnavailableException } = exceptions
   const { SpecificationService } = services
 
@@ -32,9 +24,11 @@ module.exports = function registerEndpoint(router, { services, exceptions }) {
 
       const swagger = await service.oas.generate()
 
-      // ! edit swagger object for custom definitions
-      swagger.info.title = swagger.info.description = 'DeAngelis Auctions API'
+      swagger.info.title = package.name
+      swagger.info.version = package.version
+      swagger.info.description = package.description
 
+      // ! edit swagger object for custom definitions
       swagger.paths['/auctions/register'] = { post: swagger.paths['/users']['post'] }
 
       res.json(swagger)
