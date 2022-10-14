@@ -1,8 +1,8 @@
 const permissions = JSON.parse('%%%%')
 permissions.forEach((p) => {
-  p.permissions = JSON.stringify(p.permissions)
-  p.validation = JSON.stringify(p.validation)
-  p.presets = JSON.stringify(p.presets)
+  p.permissions = JSON.stringify(p.permissions || {})
+  p.validation = JSON.stringify(p.validation || {})
+  p.presets = JSON.stringify(p.presets || {})
   delete p.id
 })
 
