@@ -3,7 +3,7 @@
 ## Initialize
 
 - create a new db
-- configure .env file like .env.example
+- configure `.env` file like .env.example
   - default for docker-compose: `../configs/directus.env`
 
 ```
