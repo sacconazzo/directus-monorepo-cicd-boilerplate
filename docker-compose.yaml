@@ -3,6 +3,8 @@ services:
   app:
     build: .
     container_name: directus-cicd
+    volumes:
+      - ../directus_share:/uploads:rw
     env_file:
       - ../configs/directus.env
     image: sacconazzo/directus-cicd
