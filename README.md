@@ -4,6 +4,12 @@
 
 - create a new db
 - configure .env file like .env.example
+  - default for docker-compose: `../configs/directus.env`
+
+```
+# docker-compose --env-file ../configs/.env up -d
+docker-compose up -d
+```
 
 ## Installation and CI
 
