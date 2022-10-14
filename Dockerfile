@@ -17,7 +17,7 @@ COPY pnpm-*.yaml .
 
 RUN pnpm install --prod
 
-COPY . /directus
+COPY . .
 
 RUN chmod -R 777 /directus/extensions/migrations
 
