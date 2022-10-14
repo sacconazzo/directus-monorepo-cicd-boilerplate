@@ -19,6 +19,7 @@
     "find-root": "^1.1.0",
     "fs-extra": "^10.1.0",
     "mysql": "^2.18.1",
+    "pg": "^8.8.0",
     "swagger-ui-express": "^4.5.0"
   },
   "pre-commit": [],

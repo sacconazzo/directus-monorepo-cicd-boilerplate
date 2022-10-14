@@ -1,4 +1,4 @@
-# DeAngelis Directus BackOffice and API
+# Directus BackOffice
 
 ## Initialize
 
@@ -17,7 +17,7 @@ Running service (no installation):
 
 ## Utils CLI
 
-Utilities scripts (bidjs signature, create roles migrations, ...):
+Utilities scripts (create automatic migrations, ...):
 
     pnpm utils --help
 
