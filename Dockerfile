@@ -19,6 +19,4 @@ RUN pnpm install --prod
 
 COPY . .
 
-RUN chmod -R 777 /directus/extensions/migrations
-
 CMD pnpm start
