@@ -1,0 +1,27 @@
+{
+  "name": "directus",
+  "version": "0.2.0",
+  "description": "directus on google cloud run",
+  "scripts": {
+    "snapshot:create": "pnpm directus schema snapshot --yes ./snapshots/latest.yaml",
+    "snapshot:check": "pnpm directus schema apply --dry-run ./snapshots/latest.yaml",
+    "snapshot:apply": "pnpm directus schema apply --yes ./snapshots/latest.yaml",
+    "db:prepare": "node ./dbPrepare.js",
+    "start:dev": "pnpm directus start",
+    "start": "node ./dbPrepare.js && pnpm directus start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "directus": "^9.19.2",
+    "find-root": "^1.1.0",
+    "fs-extra": "^10.1.0",
+    "mysql": "^2.18.1",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "pre-commit": [],
+  "devDependencies": {
+    "directus-x": "^1.1.2"
+  }
+}

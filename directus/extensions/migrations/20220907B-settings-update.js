@@ -1,5 +1,5 @@
 const settings = {
-  project_name: 'DeAngelis',
+  project_name: 'SCN API',
   project_url: null,
   project_color: null,
   project_logo: 'EBB42C0E-B56B-4D70-A32F-A31583E29A55',
@@ -15,7 +15,7 @@ const settings = {
   basemaps: null,
   mapbox_key: null,
   module_bar: null,
-  project_descriptor: 'Auctions',
+  project_descriptor: 'backoffice',
   translation_strings: null,
   default_language: 'it-IT',
   custom_aspect_ratios: null,
