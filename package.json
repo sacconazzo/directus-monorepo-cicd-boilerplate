@@ -6,10 +6,8 @@
         "start": "pnpm --filter directus start"
     },
     "private": true,
-    "dependencies": {},
     "devDependencies": {
         "@nrwl/nx-cloud": "latest",
-        "nx": "15.0.4",
-        "prettier": "^2.6.2"
+        "nx": "15.0.4"
     }
 }
