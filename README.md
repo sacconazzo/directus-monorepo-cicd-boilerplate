@@ -17,17 +17,21 @@ Preparing db with Directus setup, snapshot and migrations & running service:
 
     pnpm start
 
+## Development
+
+Working on `/directus` folder
+
 Running service (no installation):
 
-    pnpm start:only
+    pnpm start:dev
 
-## Utils CLI
+### Utils CLI
 
 Utilities scripts (create automatic migrations, ...):
 
-    pnpm utils --help
+    pnpm directus-x --help
 
-## Others
+### Others
 
 Some scripts:
 

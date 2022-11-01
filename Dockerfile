@@ -4,19 +4,16 @@ RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata
 
 RUN npm install -g pnpm
 
-WORKDIR /directus
+WORKDIR /workspace
 
 # Create data directories
 RUN mkdir -p \
-    database \
-    extensions \
-    uploads
+    directus/database \
+    directus/extensions \
+    directus/uploads
 
-COPY package.json .
-COPY pnpm-*.yaml .
+COPY . ./
 
 RUN pnpm install --prod
-
-COPY . .
 
 CMD pnpm start
