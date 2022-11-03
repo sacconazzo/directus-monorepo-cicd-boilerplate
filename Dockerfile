@@ -12,8 +12,11 @@ RUN mkdir -p \
     directus/extensions \
     directus/uploads
 
-COPY . ./
+COPY package.json .
+COPY pnpm-*.yaml .
 
 RUN pnpm install --prod
+
+COPY . ./
 
 CMD pnpm start
