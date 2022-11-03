@@ -13,7 +13,8 @@ RUN mkdir -p \
     directus/uploads
 
 COPY package.json .
-COPY pnpm-*.yaml .
+COPY directus/package.json ./directus
+COPY pnpm-*.yaml ./
 
 RUN pnpm install --prod
 
