@@ -1,13 +1,21 @@
 {
-    "name": "directus-cicd",
-    "version": "0.2.0",
-    "description": "directus on google cloud run",
-    "scripts": {
-        "start": "pnpm --filter directus start"
-    },
-    "private": true,
-    "devDependencies": {
-        "@nrwl/nx-cloud": "latest",
-        "nx": "15.0.4"
-    }
+  "name": "directus-cicd",
+  "version": "0.3.0",
+  "description": "directus on google cloud run",
+  "scripts": {
+    "lint": "pnpm nx run-many --target=lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "test": "pnpm nx run-many --target=test --output-style=static",
+    "build": "pnpm nx run-many --target=build",
+    "build:force": "pnpm nx run-many --target=build --skip-nx-cache",
+    "dev": "pnpm --filter directus-node dev",
+    "start": "pnpm --filter directus-node start",
+    "start:all": "pnpm --parallel start",
+    "graph": "pnpm nx graph"
+  },
+  "private": true,
+  "devDependencies": {
+    "nx": "15.0.10",
+    "@nrwl/nx-cloud": "latest"
+  }
 }

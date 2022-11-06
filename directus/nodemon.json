@@ -1,0 +1,7 @@
+{
+    "ext": "js,ts,json",
+    "ignoreRoot": [
+        ".git"
+    ],
+    "exec": "pnpm directus start"
+}

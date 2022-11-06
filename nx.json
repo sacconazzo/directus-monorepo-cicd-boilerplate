@@ -1,19 +1,43 @@
 {
-    "extends": "nx/presets/npm.json",
-    "$schema": "./node_modules/nx/schemas/nx-schema.json",
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "@nrwl/nx-cloud",
-            "options": {
-                "cacheDirectory": "tmp/nxcache",
-                "cacheableOperations": [
-                    "build",
-                    "lint",
-                    "test",
-                    "e2e"
-                ],
-                "accessToken": "MjUxY2VkZWQtOGVjOS00NmJmLTkwNWYtNzE4Y2MwYjExZDY5fHJlYWQtd3JpdGU="
-            }
-        }
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheDirectory": "tmp/nxcache",
+        "parallel": 5,
+        "cacheableOperations": [
+          "lint",
+          "start",
+          "test",
+          "build"
+        ],
+        "accessToken": "NTUxMGM2MGItNmFiNi00NjNhLWEyYTItNThkY2FmZDVkMzAzfHJlYWQtd3JpdGU="
+      }
     }
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": [
+        "{projectRoot}/src/**/*"
+      ],
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/build"
+      ]
+    },
+    "lint": {
+      "inputs": [
+        "{projectRoot}/src/**/*",
+        "{projectRoot}/tests/**/*",
+        "{projectRoot}/extensions/**/*"
+      ]
+    },
+    "test": {
+      "inputs": [
+        "{projectRoot}/src/**/*",
+        "{projectRoot}/tests/**/*"
+      ]
+    }
+  },
+  "defaultBase": "main"
 }

@@ -11,5 +11,6 @@ services:
     restart: always
     ports:
       - '${PORT:-8055}:8080'
+      - '${PORT_FE:-8080}:5000'
     environment:
       - PORT=8080

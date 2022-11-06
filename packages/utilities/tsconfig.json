@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "commonjs",
+		"outDir": "dist",
+		"rootDir": "src",
+		"strict": true,
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"checkJs": true,
+		"sourceMap": true,
+		"allowJs": true,
+		"moduleResolution": "node",
+		"types": [
+			"node",
+			"jest"
+		],
+		"lib": [
+			"es6"
+		],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowUnreachableCode": true,
+		"useUnknownInCatchVariables": false, // TypeScript 4.4+ only!
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.js"
+	],
+	"exclude": [
+		"node_modules",
+		"<node_internals>/**",
+	]
+}

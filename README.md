@@ -13,27 +13,51 @@ docker-compose up -d
 
 ## Installation and CI
 
+Build all packages:
+
+    pnpm build
+
 Preparing db with Directus setup, snapshot and migrations & running service:
 
     pnpm start
 
 ## Development
 
-Working on `/directus` folder
+![workspace](workspace.png)
 
-Running service (no installation):
+### Directus
 
-    pnpm start:dev
+**Workdir `/directus`**
 
-### Utils CLI
+Running service (no installation) in watch mode:
 
-Utilities scripts (create automatic migrations, ...):
+    pnpm dev
+
+#### Utils CLI
+
+Utilities scripts (create roles migrations, translations, ...):
 
     pnpm directus-x --help
 
-### Others
+#### Others
 
 Some scripts:
 
 - `pnpm snapshot:create` Create e new snapshot
 - `pnpm snapshot:check` Print-out the planned changes (only from snapshot, not migrations)
+
+### Frontend package
+
+**Workdir `/frontend`**
+
+### Directus Extensions packages
+
+**Workdir `/directus-extensions/*`**
+
+### Common libraries or utils
+
+**Workdir `/packages/*`**
+
+### Project packages graph
+
+    pnpm graph
