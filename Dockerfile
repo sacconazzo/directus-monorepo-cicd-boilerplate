@@ -8,12 +8,23 @@ WORKDIR /workspace
 
 # Create data directories
 RUN mkdir -p \
-    directus/database \
     directus/extensions \
     directus/uploads
 
-COPY . ./
+COPY package.json .
+COPY pnpm-*.yaml ./
+
+COPY directus/package.json ./directus/
+COPY directus-extensions/api-docs/package.json ./directus-extensions/api-docs/
+COPY packages/utilities/package.json ./packages/utilities/
+COPY frontend/package.json ./frontend/
 
 RUN pnpm install --prod
 
-CMD pnpm start
+COPY . ./
+
+RUN pnpm --parallel build
+
+EXPOSE 8080 5000
+
+CMD pnpm start:all

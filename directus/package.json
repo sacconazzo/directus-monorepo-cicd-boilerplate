@@ -3,24 +3,32 @@
   "version": "0.2.0",
   "description": "directus on google cloud run",
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore --ext .js extensions",
+    "lint:fix": "pnpm lint --fix",
     "snapshot:create": "pnpm directus schema snapshot --yes ./snapshots/latest.yaml",
     "snapshot:check": "pnpm directus schema apply --dry-run ./snapshots/latest.yaml",
     "snapshot:apply": "pnpm directus schema apply --yes ./snapshots/latest.yaml",
     "db:prepare": "node ./dbPrepare.js",
-    "start:dev": "pnpm directus start",
+    "dev": "nodemon",
     "start": "node ./dbPrepare.js && pnpm directus start"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "directus": "^9.19.2",
+    "directus": "^9.20.4",
+    "directus-extension-api-docs": "workspace:^1.0.0",
     "find-root": "^1.1.0",
     "fs-extra": "^10.1.0",
     "mysql": "^2.18.1",
-    "swagger-ui-express": "^4.5.0"
+    "swagger-ui-express": "^4.5.0",
+    "utilities": "workspace:^1.0.0"
   },
   "devDependencies": {
-    "directus-x": "^1.1.2"
+    "directus-x": "^1.1.5",
+    "eslint": "^8.27.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
   }
 }
