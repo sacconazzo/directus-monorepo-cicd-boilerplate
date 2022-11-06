@@ -9,8 +9,8 @@
     "build": "pnpm nx run-many --target=build",
     "build:force": "pnpm nx run-many --target=build --skip-nx-cache",
     "dev": "pnpm --filter directus-node dev",
-    "start": "pnpm --filter directus-node start",
-    "start:all": "pnpm nx run-many --target=start",
+    "start:directus": "pnpm --filter directus-node start",
+    "start": "pnpm nx run-many --target=start",
     "graph": "pnpm nx graph"
   },
   "private": true,
