@@ -10,11 +10,11 @@
     "build:force": "pnpm nx run-many --target=build --skip-nx-cache",
     "dev": "pnpm --filter directus-node dev",
     "start": "pnpm --filter directus-node start",
-    "start:all": "pnpm --parallel start",
+    "start:all": "pnpm nx run-many --target=lint",
     "graph": "pnpm nx graph"
   },
   "private": true,
-  "devDependencies": {
+  "dependencies": {
     "nx": "15.0.10",
     "@nrwl/nx-cloud": "latest"
   }
