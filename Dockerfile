@@ -6,7 +6,6 @@ RUN npm install -g pnpm
 
 WORKDIR /workspace
 
-# Create data directories
 RUN mkdir -p \
     directus/extensions \
     directus/uploads
@@ -27,4 +26,4 @@ RUN pnpm --parallel build
 
 EXPOSE 8080 5000
 
-CMD pnpm start:all
+CMD pnpm start
