@@ -16,7 +16,7 @@
 		"test": "jest --verbose=true",
 		"lint": "eslint --ignore-path .gitignore --ext .ts tests/ src/",
 		"lint:fix": "pnpm lint --fix",
-		"build": "rm -rf dist && directus-extension build",
+		"build": "directus-extension build",
 		"dev": "directus-extension build -w --no-minify"
 	},
 	"dependencies": {

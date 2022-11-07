@@ -9,6 +9,7 @@
 		"strictNullChecks": true,
 		"checkJs": true,
 		"sourceMap": true,
+		"declaration": true,
 		"allowJs": true,
 		"moduleResolution": "node",
 		"types": [

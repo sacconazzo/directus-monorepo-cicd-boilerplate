@@ -9,7 +9,7 @@
         "test": "jest --verbose=true",
         "lint": "eslint --ignore-path .gitignore --ext .ts tests/ src/",
         "lint:fix": "pnpm lint --fix",
-        "build": "rm -rf dist && tsc --declaration"
+        "build": "tsc"
     },
     "license": "MIT",
     "dependencies": {
