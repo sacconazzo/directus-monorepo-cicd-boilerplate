@@ -8,5 +8,5 @@
         "src/**/*.spec.ts",
         "src/**/*.test.ts"
     ],
-    "exec": "tsc --declaration"
+    "exec": "tsc"
 }

@@ -9,7 +9,8 @@
         "test": "jest --verbose=true",
         "lint": "eslint --ignore-path .gitignore --ext .ts tests/ src/",
         "lint:fix": "pnpm lint --fix",
-        "build": "tsc"
+        "build": "tsc",
+        "dev": "nodemon"
     },
     "license": "MIT",
     "dependencies": {
