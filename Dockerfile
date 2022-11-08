@@ -1,6 +1,6 @@
 FROM node:16.17.0-alpine3.16
 
-RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata
+RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata python3 py3-pip
 
 RUN npm install -g pnpm
 
