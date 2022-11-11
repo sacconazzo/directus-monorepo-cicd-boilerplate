@@ -13,7 +13,7 @@ importers:
   directus:
     specifiers:
       directus: ^9.20.4
-      directus-extension-api-docs: ^1.1.0
+      directus-extension-api-docs: ^1.1.1
       directus-x: ^1.1.5
       eslint: ^8.27.0
       eslint-plugin-prettier: ^4.2.1
@@ -26,7 +26,7 @@ importers:
       utilities: workspace:^1.0.0
     dependencies:
       directus: 9.20.4_typescript@4.8.4
-      directus-extension-api-docs: 1.1.0_express@4.18.2
+      directus-extension-api-docs: 1.1.1_express@4.18.2
       find-root: 1.1.0
       fs-extra: 10.1.0
       mysql: 2.18.1
@@ -6619,8 +6619,8 @@ packages:
     dependencies:
       path-type: 4.0.0
 
-  /directus-extension-api-docs/1.1.0_express@4.18.2:
-    resolution: {integrity: sha512-HwbdEOLQeJbFbfUADG7N6f2nhMCYjP2bOxQKSB0c/M+kj58lko5ZJsNjfAO2ss3arsGncmqvjJzi/wz0gAtnuA==}
+  /directus-extension-api-docs/1.1.1_express@4.18.2:
+    resolution: {integrity: sha512-EnxWlFUrE0b4IEN+VApEVz0fYjiIo7YmuzfNGu55gb+rSt+jeOCL6ZnXAM4wY6bRexuEZxaRkGKD+8nJRpbxSQ==}
     dependencies:
       '@pnpm/find-workspace-dir': 5.0.0
       swagger-ui-express: 4.6.0_express@4.18.2
