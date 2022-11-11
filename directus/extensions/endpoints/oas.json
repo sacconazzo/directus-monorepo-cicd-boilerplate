@@ -1,0 +1,52 @@
+{
+    "paths": {
+        "/auctions/register": {
+            "post": {
+                "summary": "Create a User",
+                "description": "Create a new user.",
+                "operationId": "createUser",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/Meta"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Users"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/Users"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "$ref": "#/components/responses/UnauthorizedError"
+                    },
+                    "404": {
+                        "$ref": "#/components/responses/NotFoundError"
+                    }
+                },
+                "tags": [
+                    "Users",
+                    "Auctions"
+                ]
+            }
+        }
+    }
+}

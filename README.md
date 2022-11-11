@@ -50,10 +50,6 @@ Some scripts:
 
 **Workdir `/frontend`**
 
-### Directus Extensions packages
-
-**Workdir `/directus-extensions/*`**
-
 ### Common libraries or utils
 
 **Workdir `/packages/*`**

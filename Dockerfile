@@ -15,7 +15,6 @@ COPY package.json .
 COPY pnpm-*.yaml ./
 
 COPY directus/package.json ./directus/
-COPY directus-extensions/api-docs/package.json ./directus-extensions/api-docs/
 COPY packages/utilities/package.json ./packages/utilities/
 COPY frontend/package.json ./frontend/
 
