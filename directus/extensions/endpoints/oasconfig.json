@@ -1,16 +1,23 @@
 {
+    "docsPath": "api-docs",
+    "tags": [
+        {
+            "name":"Auctions",
+            "description":"CustomTag"
+        }
+    ],
     "paths": {
         "/auctions/register": {
             "post": {
                 "summary": "Create a User",
-                "description": "Create a new user.",
-                "operationId": "createUser",
-                "parameters": [
-                    {
-                        "$ref": "#/components/parameters/Meta"
-                    }
-                ],
-                "requestBody": {
+                    "description": "Create a new user.",
+                        "operationId": "createUser",
+                            "parameters": [
+                                {
+                                    "$ref": "#/components/parameters/Meta"
+                                }
+                            ],
+                                "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
@@ -22,11 +29,11 @@
                 "responses": {
                     "200": {
                         "description": "Successful request",
-                        "content": {
+                            "content": {
                             "application/json": {
                                 "schema": {
                                     "type": "object",
-                                    "properties": {
+                                        "properties": {
                                         "data": {
                                             "$ref": "#/components/schemas/Users"
                                         }
