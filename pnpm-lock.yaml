@@ -13,7 +13,7 @@ importers:
   directus:
     specifiers:
       directus: ^9.20.4
-      directus-extension-api-docs: ^1.2.3
+      directus-extension-api-docs: ^1.2.7
       directus-x: ^1.1.7
       eslint: ^8.27.0
       eslint-plugin-prettier: ^4.2.1
@@ -26,7 +26,7 @@ importers:
       utilities: workspace:^1.0.0
     dependencies:
       directus: 9.20.4_typescript@4.8.4
-      directus-extension-api-docs: 1.2.3_express@4.18.2
+      directus-extension-api-docs: 1.2.7_express@4.18.2
       find-root: 1.1.0
       fs-extra: 10.1.0
       mysql: 2.18.1
@@ -3987,7 +3987,7 @@ packages:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 16.18.3
+      '@types/node': 18.11.9
     dev: false
 
   /@types/bonjour/3.5.10:
@@ -4011,7 +4011,7 @@ packages:
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
-      '@types/node': 16.18.3
+      '@types/node': 18.11.9
     dev: false
 
   /@types/cssnano/5.1.0_postcss@8.4.19:
@@ -4058,7 +4058,7 @@ packages:
   /@types/express-serve-static-core/4.17.31:
     resolution: {integrity: sha512-DxMhY+NAsTwMMFHBTtJFNp5qiHKJ7TeqOo23zVEM9alT1Ml27Q3xcTH0xwxn7Q0BbMcVEJOs/7aQtUWupUQN3Q==}
     dependencies:
-      '@types/node': 16.18.3
+      '@types/node': 18.11.9
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
     dev: false
@@ -4214,7 +4214,7 @@ packages:
     resolution: {integrity: sha512-z5xyF6uh8CbjAu9760KDKsH2FcDxZ2tFCsA4HIMWE6IkiYMXfVoa+4f9KX+FN0ZLsaMw1WNG2ETLA6N+/YA+cg==}
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 16.18.3
+      '@types/node': 18.11.9
     dev: false
 
   /@types/sockjs/0.3.33:
@@ -6656,8 +6656,8 @@ packages:
     dependencies:
       path-type: 4.0.0
 
-  /directus-extension-api-docs/1.2.3_express@4.18.2:
-    resolution: {integrity: sha512-ycnC0i2qZjJSDF+pTtQzz72kqz+zdHNbEQxUoyYVD0nQQs/K6JF+/RPCz9zhfX9NwbzwlvntqNg5m2Y+qdQjHw==}
+  /directus-extension-api-docs/1.2.7_express@4.18.2:
+    resolution: {integrity: sha512-8N34UnbdJT/RGsnG5m5rKyF5saYumREuUNuh799axnt1haArZzmr7JOeRxiviMNXDP9f85/AwY5K+MHWNbwYtg==}
     dependencies:
       '@pnpm/find-workspace-dir': 5.0.0
       express-openapi-validator: 4.13.8

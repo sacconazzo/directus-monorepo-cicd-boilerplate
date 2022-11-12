@@ -2,11 +2,12 @@ const { validate } = require('directus-extension-api-docs');
 
 module.exports = {
     id: 'auctions',
-    handler: function registerEndpoint(router, { services, exceptions, logger }) {
+    handler: async function registerEndpoint(router, { services, exceptions, getSchema }) {
         const { ItemsService } = services;
         const { ServiceUnavailableException } = exceptions;
 
-        validate(router, ['/auctions/test']);
+        const schema = await getSchema()
+        await validate(router, services, schema);
 
         router.post('/test', async (req, res, next) => {
             try {
