@@ -2,40 +2,46 @@
     "docsPath": "api-docs",
     "tags": [
         {
-            "name":"Auctions",
-            "description":"CustomTag"
+            "name": "Auctions",
+            "description": "CustomTag"
         }
     ],
     "paths": {
-        "/auctions/register": {
+        "/auctions/test": {
             "post": {
-                "summary": "Create a User",
-                    "description": "Create a new user.",
-                        "operationId": "createUser",
-                            "parameters": [
-                                {
-                                    "$ref": "#/components/parameters/Meta"
-                                }
-                            ],
-                                "requestBody": {
+                "summary": "Test",
+                "description": "Test",
+                "tags": [
+                    "Users",
+                    "Auctions"
+                ],
+                "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Users"
+                                "type": "object",
+                                "required": [
+                                    "email"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string"
+                                    }
+                                }
                             }
                         }
                     }
                 },
                 "responses": {
                     "200": {
-                        "description": "Successful request",
-                            "content": {
+                        "description": "Ok",
+                        "content": {
                             "application/json": {
                                 "schema": {
                                     "type": "object",
-                                        "properties": {
-                                        "data": {
-                                            "$ref": "#/components/schemas/Users"
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
                                         }
                                     }
                                 }
@@ -43,16 +49,26 @@
                         }
                     },
                     "401": {
-                        "$ref": "#/components/responses/UnauthorizedError"
+                        "description": "Unauthorized",
+                        "content": {}
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {}
                     },
                     "404": {
-                        "$ref": "#/components/responses/NotFoundError"
+                        "description": "Not Found",
+                        "content": {}
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity",
+                        "content": {}
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {}
                     }
-                },
-                "tags": [
-                    "Users",
-                    "Auctions"
-                ]
+                }
             }
         }
     }

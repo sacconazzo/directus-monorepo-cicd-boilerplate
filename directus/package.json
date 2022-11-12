@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "directus": "^9.20.4",
-    "directus-extension-api-docs": "^1.1.1",
+    "directus-extension-api-docs": "^1.2.3",
     "find-root": "^1.1.0",
     "fs-extra": "^10.1.0",
     "mysql": "^2.18.1",
@@ -25,7 +25,7 @@
     "utilities": "workspace:^1.0.0"
   },
   "devDependencies": {
-    "directus-x": "^1.1.5",
+    "directus-x": "^1.1.7",
     "eslint": "^8.27.0",
     "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.20",
