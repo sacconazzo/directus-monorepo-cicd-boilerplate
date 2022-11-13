@@ -6,7 +6,7 @@ module.exports = {
         const { ItemsService } = services;
         const { ServiceUnavailableException } = exceptions;
 
-        const schema = await getSchema()
+        const schema = await getSchema();
         await validate(router, services, schema);
 
         router.post('/test', async (req, res, next) => {
@@ -22,7 +22,7 @@ module.exports = {
                     },
                 });
 
-                res.json({ id: user?.id });
+                res.json({ id: user?.id || null });
             } catch (error) {
                 return next(new ServiceUnavailableException(error.message || error[0].message));
             }
