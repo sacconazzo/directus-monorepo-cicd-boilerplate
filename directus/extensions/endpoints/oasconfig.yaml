@@ -1,3 +1,5 @@
 docsPath: api-docs
+info: 
+  description: api definitions
 tags: []
 components: 
