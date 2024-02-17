@@ -1,6 +1,8 @@
 {
   "name": "directus-cicd",
   "version": "0.3.1",
+  "author": "Giona Righini (sacconazzo)",
+  "license": "MIT",
   "description": "directus on google cloud run",
   "scripts": {
     "lint": "pnpm nx run-many --target=lint",
