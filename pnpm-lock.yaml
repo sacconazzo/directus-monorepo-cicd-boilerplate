@@ -18,10 +18,10 @@ importers:
   directus:
     dependencies:
       directus:
-        specifier: ^9.22.4
-        version: 9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
+        specifier: ^9.26.0
+        version: 9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(underscore@1.12.1)
       directus-extension-api-docs:
-        specifier: ^1.5.0
+        specifier: ^1.9.1
         version: 1.9.1(express@4.19.2)
       find-root:
         specifier: ^1.1.0
@@ -33,44 +33,44 @@ importers:
         specifier: ^2.18.1
         version: 2.18.1
       swagger-ui-express:
-        specifier: ^4.6.0
+        specifier: ^4.6.3
         version: 4.6.3(express@4.19.2)
       utilities:
-        specifier: workspace:^1.0.0
+        specifier: workspace:^
         version: link:../packages/utilities
     devDependencies:
       directus-x:
-        specifier: ^1.1.7
+        specifier: ^1.2.3
         version: 1.2.3(mysql@2.18.1)(pg@8.10.0)
       eslint:
-        specifier: ^8.34.0
+        specifier: ^8.57.0
         version: 8.57.0
       eslint-plugin-prettier:
         specifier: ^4.2.1
         version: 4.2.1(eslint-config-prettier@8.10.0(eslint@8.57.0))(eslint@8.57.0)(prettier@2.8.8)
       nodemon:
-        specifier: ^2.0.20
+        specifier: ^2.0.22
         version: 2.0.22
       prettier:
-        specifier: ^2.8.4
+        specifier: ^2.8.8
         version: 2.8.8
 
   frontend:
     dependencies:
       '@types/node':
-        specifier: ^16.18.12
+        specifier: ^16.18.98
         version: 16.18.98
       '@types/react':
-        specifier: ^18.0.27
+        specifier: ^18.3.3
         version: 18.3.3
       '@types/react-dom':
-        specifier: ^18.0.10
+        specifier: ^18.3.0
         version: 18.3.0
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
@@ -79,7 +79,7 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
       utilities:
-        specifier: workspace:^1.0.0
+        specifier: workspace:^
         version: link:../packages/utilities
       web-vitals:
         specifier: ^2.1.4
@@ -88,50 +88,50 @@ importers:
   packages/utilities:
     dependencies:
       '@types/jest':
-        specifier: ^29.4.0
+        specifier: ^29.5.12
         version: 29.5.12
       '@types/node':
-        specifier: ^18.13.0
+        specifier: ^18.19.34
         version: 18.19.34
       jest:
-        specifier: ^29.4.2
+        specifier: ^29.7.0
         version: 29.7.0(@types/node@18.19.34)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@18.19.34)(typescript@4.9.5))
       typescript:
         specifier: ^4.9.5
         version: 4.9.5
     devDependencies:
       '@typescript-eslint/eslint-plugin':
-        specifier: ^5.51.0
+        specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@4.9.5))(eslint@8.57.0)(typescript@4.9.5)
       '@typescript-eslint/parser':
-        specifier: ^5.51.0
+        specifier: ^5.62.0
         version: 5.62.0(eslint@8.57.0)(typescript@4.9.5)
       eslint:
-        specifier: ^8.34.0
+        specifier: ^8.57.0
         version: 8.57.0
       eslint-config-prettier:
-        specifier: ^8.6.0
+        specifier: ^8.10.0
         version: 8.10.0(eslint@8.57.0)
       eslint-plugin-import:
-        specifier: ^2.27.5
+        specifier: ^2.29.1
         version: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@4.9.5))(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: ^4.2.1
         version: 4.2.1(eslint-config-prettier@8.10.0(eslint@8.57.0))(eslint@8.57.0)(prettier@2.8.8)
       jest-extended:
-        specifier: ^3.2.3
+        specifier: ^3.2.4
         version: 3.2.4(jest@29.7.0(@types/node@18.19.34)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@18.19.34)(typescript@4.9.5)))
       nodemon:
-        specifier: ^2.0.20
+        specifier: ^2.0.22
         version: 2.0.22
       prettier:
-        specifier: ^2.8.4
+        specifier: ^2.8.8
         version: 2.8.8
       ts-jest:
-        specifier: ^29.0.5
+        specifier: ^29.1.4
         version: 29.1.4(@babel/core@7.24.7)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.24.7))(jest@29.7.0(@types/node@18.19.34)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@18.19.34)(typescript@4.9.5)))(typescript@4.9.5)
       ts-node:
-        specifier: ^10.9.1
+        specifier: ^10.9.2
         version: 10.9.2(@types/node@18.19.34)(typescript@4.9.5)
 
 packages:
@@ -2503,6 +2503,9 @@ packages:
 
   '@types/node@18.19.34':
     resolution: {integrity: sha512-eXF4pfBNV5DAMKGbI02NnDtWrQ40hAN558/2vvS4gMpMIxaf6JmD7YjnZbq0Q9TDSSkKBamime8ewRoomHdt4g==}
+
+  '@types/node@20.14.2':
+    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -10987,7 +10990,7 @@ snapshots:
     dependencies:
       postcss-selector-parser: 6.1.0
 
-  '@directus/api@9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)':
+  '@directus/api@9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(underscore@1.12.1)':
     dependencies:
       '@authenio/samlify-node-xmllint': 2.0.0(samlify@2.8.10)
       '@aws-sdk/client-ses': 3.316.0
@@ -11088,7 +11091,7 @@ snapshots:
       keyv-memcache: 1.3.3
       memcached: 2.2.2
       mysql: 2.18.1
-      nodemailer-mailgun-transport: 2.1.5(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
+      nodemailer-mailgun-transport: 2.1.5(ejs@3.1.10)(lodash@4.17.21)(underscore@1.12.1)
       nodemailer-sendgrid: 1.0.3
       pg: 8.10.0
       sqlite3: 5.1.6(encoding@0.1.13)
@@ -11533,7 +11536,7 @@ snapshots:
   '@jest/console@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       jest-message-util: 27.5.1
       jest-util: 27.5.1
@@ -11542,7 +11545,7 @@ snapshots:
   '@jest/console@28.1.3':
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       jest-message-util: 28.1.3
       jest-util: 28.1.3
@@ -11564,7 +11567,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.8.1
@@ -11633,7 +11636,7 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       jest-mock: 27.5.1
 
   '@jest/environment@29.7.0':
@@ -11658,7 +11661,7 @@ snapshots:
     dependencies:
       '@jest/types': 27.5.1
       '@sinonjs/fake-timers': 8.1.0
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       jest-message-util: 27.5.1
       jest-mock: 27.5.1
       jest-util: 27.5.1
@@ -11694,7 +11697,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -11847,7 +11850,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       '@types/yargs': 16.0.9
       chalk: 4.1.2
 
@@ -11856,7 +11859,7 @@ snapshots:
       '@jest/schemas': 28.1.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
@@ -12336,11 +12339,11 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/bonjour@3.5.13':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/caseless@0.12.5':
     optional: true
@@ -12348,11 +12351,11 @@ snapshots:
   '@types/connect-history-api-fallback@1.5.4':
     dependencies:
       '@types/express-serve-static-core': 4.19.3
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/cssnano@5.1.0(postcss@8.4.38)':
     dependencies:
@@ -12376,7 +12379,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.3':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -12398,7 +12401,7 @@ snapshots:
 
   '@types/http-proxy@1.17.14':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -12427,16 +12430,20 @@ snapshots:
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 20.14.2
       form-data: 4.0.0
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/node@16.18.98': {}
 
   '@types/node@18.19.34':
+    dependencies:
+      undici-types: 5.26.5
+
+  '@types/node@20.14.2':
     dependencies:
       undici-types: 5.26.5
 
@@ -12464,14 +12471,14 @@ snapshots:
   '@types/request@2.48.12':
     dependencies:
       '@types/caseless': 0.12.5
-      '@types/node': 18.19.34
+      '@types/node': 20.14.2
       '@types/tough-cookie': 4.0.5
       form-data: 2.5.1
     optional: true
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/resolve@1.20.2': {}
 
@@ -12482,7 +12489,7 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/serve-index@1.9.4':
     dependencies:
@@ -12491,12 +12498,12 @@ snapshots:
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       '@types/send': 0.17.4
 
   '@types/sockjs@0.3.36':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/stack-utils@2.0.3': {}
 
@@ -12507,11 +12514,11 @@ snapshots:
 
   '@types/tunnel@0.0.3':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 20.14.2
 
   '@types/ws@8.5.10':
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -13664,14 +13671,12 @@ snapshots:
 
   console-control-strings@1.1.0: {}
 
-  consolidate@0.15.1(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1):
+  consolidate@0.15.1(ejs@3.1.10)(lodash@4.17.21)(underscore@1.12.1):
     dependencies:
       bluebird: 3.7.2
     optionalDependencies:
       ejs: 3.1.10
       lodash: 4.17.21
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
       underscore: 1.12.1
     optional: true
 
@@ -14057,9 +14062,9 @@ snapshots:
       - supports-color
       - tedious
 
-  directus@9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1):
+  directus@9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(underscore@1.12.1):
     dependencies:
-      '@directus/api': 9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
+      '@directus/api': 9.26.0(ejs@3.1.10)(encoding@0.1.13)(lodash@4.17.21)(underscore@1.12.1)
     transitivePeerDependencies:
       - '@aws-sdk/signature-v4-crt'
       - arc-templates
@@ -15879,7 +15884,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
@@ -16072,7 +16077,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       jest-mock: 27.5.1
       jest-util: 27.5.1
       jsdom: 16.7.0
@@ -16087,7 +16092,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       jest-mock: 27.5.1
       jest-util: 27.5.1
 
@@ -16115,7 +16120,7 @@ snapshots:
     dependencies:
       '@jest/types': 27.5.1
       '@types/graceful-fs': 4.1.9
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -16150,7 +16155,7 @@ snapshots:
       '@jest/source-map': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       co: 4.6.0
       expect: 27.5.1
@@ -16229,7 +16234,7 @@ snapshots:
   jest-mock@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
 
   jest-mock@29.7.0:
     dependencies:
@@ -16298,7 +16303,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       emittery: 0.8.1
       graceful-fs: 4.2.11
@@ -16402,7 +16407,7 @@ snapshots:
 
   jest-serializer@27.5.1:
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       graceful-fs: 4.2.11
 
   jest-snapshot@27.5.1:
@@ -16460,7 +16465,7 @@ snapshots:
   jest-util@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -16469,7 +16474,7 @@ snapshots:
   jest-util@28.1.3:
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -16517,7 +16522,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       jest-util: 27.5.1
@@ -16527,7 +16532,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 28.1.3
       '@jest/types': 28.1.3
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.10.2
@@ -16547,19 +16552,19 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
   jest-worker@28.1.3:
     dependencies:
-      '@types/node': 18.19.34
+      '@types/node': 16.18.98
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -16961,7 +16966,7 @@ snapshots:
 
   mailgun.js@8.2.2:
     dependencies:
-      axios: 1.7.2
+      axios: 1.3.6
       base-64: 1.0.0
       url-join: 4.0.1
     transitivePeerDependencies:
@@ -17262,9 +17267,9 @@ snapshots:
 
   node-xmllint@1.0.0: {}
 
-  nodemailer-mailgun-transport@2.1.5(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1):
+  nodemailer-mailgun-transport@2.1.5(ejs@3.1.10)(lodash@4.17.21)(underscore@1.12.1):
     dependencies:
-      consolidate: 0.15.1(ejs@3.1.10)(lodash@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(underscore@1.12.1)
+      consolidate: 0.15.1(ejs@3.1.10)(lodash@4.17.21)(underscore@1.12.1)
       form-data: 4.0.0
       mailgun.js: 8.2.2
     transitivePeerDependencies:

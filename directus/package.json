@@ -16,19 +16,19 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "directus": "^9.22.4",
-    "directus-extension-api-docs": "^1.5.0",
+    "directus": "^9.26.0",
+    "directus-extension-api-docs": "^1.9.1",
     "find-root": "^1.1.0",
     "fs-extra": "^10.1.0",
     "mysql": "^2.18.1",
-    "swagger-ui-express": "^4.6.0",
-    "utilities": "workspace:^1.0.0"
+    "swagger-ui-express": "^4.6.3",
+    "utilities": "workspace:^"
   },
   "devDependencies": {
-    "directus-x": "^1.1.7",
-    "eslint": "^8.34.0",
+    "directus-x": "^1.2.3",
+    "eslint": "^8.57.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.8.4"
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
   }
 }
