@@ -1,6 +1,6 @@
 FROM node:20
 
-RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata python3 py3-pip g++ make
+# RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata python3 py3-pip g++ make
 
 RUN npm install -g pnpm
 RUN npm install -g serve
@@ -24,6 +24,6 @@ COPY . ./
 
 RUN pnpm --parallel build
 
-EXPOSE 8080 5000
+EXPOSE 8055 8080
 
 CMD pnpm start
