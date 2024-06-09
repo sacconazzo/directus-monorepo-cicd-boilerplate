@@ -1,16 +1,16 @@
-version: '3.3'
+version: "3.3"
 services:
   app:
     build: .
     container_name: directus-cicd
     volumes:
-      - ../directus_share:/mono/directus/uploads
+      - ../directus_share:/directus/uploads
     env_file:
       - ../configs/directus.env
     image: sacconazzo/directus-cicd
     restart: always
     ports:
-      - '${PORT:-8055}:8080'
-      - '${PORT_FE:-8080}:5000'
+      - "${PORT:-8055}:8055"
+      - "${PORT_FE:-5000}:5000"
     environment:
-      - PORT=8080
+      - PORT=8055
