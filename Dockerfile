@@ -24,6 +24,6 @@ COPY . ./
 
 RUN pnpm --parallel build
 
-EXPOSE 8055 8080
+EXPOSE 8055 5000
 
 CMD pnpm start
