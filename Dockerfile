@@ -1,4 +1,4 @@
-FROM node:16.17.0-alpine3.16
+FROM node:20
 
 RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata python3 py3-pip g++ make
 
