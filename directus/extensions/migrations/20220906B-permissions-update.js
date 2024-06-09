@@ -236,7 +236,7 @@ const permissions = [
 ];
 
 module.exports = {
-    async up(knex) {
+    up: async knex => {
         // const allArticles = await knex('directus_permissions')
         //   .select('*')
         //   .whereNull('role')
@@ -247,7 +247,7 @@ module.exports = {
         // }
     },
 
-    async down(knex) {
+    down: async knex => {
         return true;
     },
 };

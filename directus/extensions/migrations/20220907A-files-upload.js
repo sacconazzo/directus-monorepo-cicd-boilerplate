@@ -25,11 +25,11 @@ const files = [
 ];
 
 module.exports = {
-    async up(knex) {
+    up: async knex => {
         return knex('directus_files').insert(files);
     },
 
-    async down(knex) {
+    down: async knex => {
         return true;
     },
 };

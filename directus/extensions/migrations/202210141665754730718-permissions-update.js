@@ -9,12 +9,12 @@ permissions.forEach(p => {
 });
 
 module.exports = {
-    async up(knex) {
+    up: async knex => {
         await knex('directus_permissions').delete().where('role', 'dc7be20f-7b81-431e-8db2-3ffbbf4f9174');
         return permissions.length ? knex('directus_permissions').insert(permissions) : true;
     },
 
-    async down(knex) {
+    down: async knex => {
         return true;
     },
 };

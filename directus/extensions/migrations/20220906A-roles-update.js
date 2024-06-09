@@ -22,11 +22,11 @@ const roles = [
 ];
 
 module.exports = {
-    async up(knex) {
+    up: async knex => {
         return knex('directus_roles').insert(roles);
     },
 
-    async down(knex) {
+    down: async knex => {
         return true;
     },
 };

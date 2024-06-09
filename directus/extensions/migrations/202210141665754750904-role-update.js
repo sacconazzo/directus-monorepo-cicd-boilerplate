@@ -3,12 +3,12 @@ const role = JSON.parse(
 );
 
 module.exports = {
-    async up(knex) {
+    up: async knex => {
         const [setRole] = await knex('directus_roles').select().where('id', 'E8EDAA1E-EBBC-4024-83A6-A2C832AC7D84');
         return setRole ? knex('directus_roles').update(role).where('id', 'E8EDAA1E-EBBC-4024-83A6-A2C832AC7D84') : knex('directus_roles').insert(role);
     },
 
-    async down(knex) {
+    down: async knex => {
         return true;
     },
 };
