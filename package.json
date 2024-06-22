@@ -1,6 +1,6 @@
 {
   "name": "directus-cicd",
-  "version": "0.3.1",
+  "version": "2.0.0",
   "author": "Giona Righini (sacconazzo)",
   "license": "MIT",
   "description": "directus on google cloud run",
@@ -10,7 +10,7 @@
     "test": "pnpm nx run-many --target=test --output-style=static",
     "build": "pnpm nx run-many --target=build",
     "build:force": "pnpm nx run-many --target=build --skip-nx-cache",
-    "dev": "pnpm --filter directus-node dev",
+    "dev": "pnpm nx run-many --target=dev",
     "start:directus": "pnpm --filter directus-node start",
     "start": "pnpm nx run-many --target=start",
     "graph": "pnpm nx graph"

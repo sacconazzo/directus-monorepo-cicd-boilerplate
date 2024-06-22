@@ -1,11 +1,7 @@
-const { countries } = require('utilities');
-
-module.exports = function registerHook(events, { services, exceptions }) {
+export default (events, { services }) => {
     const { MailService } = services;
-    const { ServiceUnavailableException, ForbiddenException } = exceptions;
 
     events.filter('users.create', async function (input, _meta) {
-        // { database, schema, accountability }) {
         const country = (input.country || 'IT').toUpperCase();
         if (!countries[country]) throw new InvalidPayloadException(`country ${country} not valid`);
 
@@ -25,7 +21,7 @@ module.exports = function registerHook(events, { services, exceptions }) {
                 },
             });
         } catch (error) {
-            throw new ServiceUnavailableException(error);
+            throw new Error(error);
         }
     });
 };

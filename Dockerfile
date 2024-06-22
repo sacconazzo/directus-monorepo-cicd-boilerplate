@@ -15,6 +15,8 @@ COPY package.json .
 COPY pnpm-*.yaml ./
 
 COPY directus/package.json ./directus/
+COPY directus/extensions/auctions/package.json ./directus/extensions/auctions/
+COPY directus/extensions/auctions-hook/package.json ./directus/extensions/auctions-hook/
 COPY packages/utilities/package.json ./packages/utilities/
 COPY frontend/package.json ./frontend/
 
@@ -26,4 +28,4 @@ RUN pnpm --parallel build
 
 EXPOSE 8055 5000
 
-CMD pnpm start
+CMD pnpm db:prepare && pnpm start
