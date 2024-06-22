@@ -5,21 +5,30 @@ const root = require('find-root')();
 const fSource = `${root}/extensions`;
 const fTemp = `${root}/_extensions`;
 
-try {
+const disableExt = () => {
     fs.copySync(fSource, fTemp);
     fs.rmSync(fSource, { recursive: true, force: true });
-} catch (e) {}
+};
 
-console.log('Preparing DB Directus');
-execSync('pnpm directus bootstrap', { stdio: 'inherit' });
-
-console.log('\nApply last Snapshot');
-execSync('pnpm snapshot:apply', { stdio: 'inherit' });
-
-try {
+const enableExt = () => {
     fs.copySync(fTemp, fSource);
     fs.rmSync(fTemp, { recursive: true, force: true });
-} catch (e) {}
+};
+
+try {
+    disableExt();
+
+    console.log('Preparing DB Directus');
+    execSync('pnpm directus bootstrap', { stdio: 'inherit' });
+
+    console.log('\nApply last Snapshot');
+    execSync('pnpm run snapshot:apply', { stdio: 'inherit' });
+} catch {
+    enableExt();
+    process.exit(1);
+} finally {
+    enableExt();
+}
 
 console.log('\nApply last Custom Migrations');
 execSync('pnpm directus database migrate:latest', { stdio: 'inherit' });

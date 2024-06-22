@@ -1,34 +1,34 @@
 {
-  "name": "directus-node",
-  "version": "0.2.0",
-  "description": "directus on google cloud run",
-  "scripts": {
-    "lint": "eslint --ignore-path .gitignore --ext .js extensions",
-    "lint:fix": "pnpm lint --fix",
-    "snapshot:create": "pnpm directus schema snapshot --yes ./snapshots/latest.yaml",
-    "snapshot:check": "pnpm directus schema apply --dry-run ./snapshots/latest.yaml",
-    "snapshot:apply": "pnpm directus schema apply --yes ./snapshots/latest.yaml",
-    "db:prepare": "node ./dbPrepare.js",
-    "dev": "nodemon",
-    "start": "node ./dbPrepare.js && pnpm directus start"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "directus": "^10.12.0",
-    "directus-extension-api-docs": "^1.9.1",
-    "find-root": "^1.1.0",
-    "fs-extra": "^10.1.0",
-    "mysql": "^2.18.1",
-    "swagger-ui-express": "^4.6.3",
-    "utilities": "workspace:^"
-  },
-  "devDependencies": {
-    "directus-x": "^1.2.3",
-    "eslint": "^8.57.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "nodemon": "^2.0.22",
-    "prettier": "^2.8.8"
-  }
+    "name": "directus-node",
+    "version": "0.2.0",
+    "description": "directus on google cloud run",
+    "scripts": {
+        "lint": "eslint --ignore-path .gitignore --ext .js extensions",
+        "lint:fix": "pnpm lint --fix",
+        "snapshot:create": "pnpm directus schema snapshot --yes ./snapshots/latest.yaml",
+        "snapshot:check": "pnpm directus schema apply --dry-run ./snapshots/latest.yaml",
+        "snapshot:apply": "pnpm directus schema apply --yes ./snapshots/latest.yaml",
+        "db:prepare": "node ./dbPrepare.js",
+        "dev": "nodemon",
+        "start": "pnpm directus start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "directus": "^10.12.1",
+        "directus-extension-api-docs": "^2.0.4",
+        "find-root": "^1.1.0",
+        "fs-extra": "^10.1.0",
+        "mysql": "^2.18.1",
+        "swagger-ui-express": "^4.6.3",
+        "utilities": "workspace:^"
+    },
+    "devDependencies": {
+        "directus-x": "^1.4.0",
+        "eslint": "^8.57.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.8"
+    }
 }
