@@ -1,12 +1,12 @@
 services:
   app:
     build: .
-    container_name: directus-cicd
+    container_name: directus-monorepo-cicd
     volumes:
       - "${DIRECTUS_SHARE:-../directus_share}:/workspace/directus/uploads"
     env_file:
       - "${DIRECTUS_ENV:-../config/.env}"
-    image: sacconazzo/directus-cicd
+    image: sacconazzo/directus-monorepo-cicd
     restart: always
     ports:
       - "${PORT:-8055}:8055"

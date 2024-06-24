@@ -1,5 +1,5 @@
 {
-  "name": "directus-cicd",
+  "name": "directus-monorepo-cicd-boilerplate",
   "version": "2.0.0",
   "author": "Giona Righini (sacconazzo)",
   "license": "MIT",
