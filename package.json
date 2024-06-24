@@ -11,6 +11,7 @@
     "build": "pnpm nx run-many --target=build",
     "build:force": "pnpm nx run-many --target=build --skip-nx-cache",
     "dev": "pnpm nx run-many --target=dev",
+    "db:prepare": "pnpm --filter directus-node db:prepare",
     "start:directus": "pnpm --filter directus-node start",
     "start": "pnpm nx run-many --target=start",
     "graph": "pnpm nx graph"
