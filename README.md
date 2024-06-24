@@ -15,11 +15,16 @@ docker-compose up -d
 
 Build all packages:
 
-    pnpm build
+```
+pnpm build
+```
 
 Preparing db with Directus setup, snapshot and migrations & running service:
 
-    pnpm start
+```
+pnpm db:prepare
+pnpm start
+```
 
 ## Development
 
@@ -27,7 +32,9 @@ Preparing db with Directus setup, snapshot and migrations & running service:
 
 Running service (no installation) in watch mode:
 
-    pnpm dev
+```
+pnpm dev
+```
 
 ### Directus utils CLI
 
@@ -35,7 +42,9 @@ Running service (no installation) in watch mode:
 
 Utilities scripts (create roles migrations, translations, ...):
 
-    pnpm directus-x --help
+```
+pnpm directus-x --help
+```
 
 #### Others
 
@@ -54,4 +63,6 @@ Some scripts:
 
 ### Project packages graph
 
-    pnpm graph
+```
+pnpm graph
+```
