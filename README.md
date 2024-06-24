@@ -25,15 +25,13 @@ Preparing db with Directus setup, snapshot and migrations & running service:
 
 ![workspace](workspace.png)
 
-### Directus
-
-**Workdir `/directus`**
-
 Running service (no installation) in watch mode:
 
     pnpm dev
 
-#### Utils CLI
+### Directus utils CLI
+
+**Workdir `/directus`**
 
 Utilities scripts (create roles migrations, translations, ...):
 
