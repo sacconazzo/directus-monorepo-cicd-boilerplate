@@ -11,3 +11,18 @@ services:
     ports:
       - "${PORT:-8055}:8055"
       - "${PORT_FE:-5000}:5000"
+
+  db:
+    image: mysql:8
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: directus
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-datavolume:/var/lib/mysql
+
+volumes:
+  mysql-datavolume:
