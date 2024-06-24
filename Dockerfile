@@ -1,6 +1,9 @@
-FROM node:20
+FROM node:20-alpine
 
-# RUN apk add --update --no-cache netcat-openbsd mysql-client ssmtp tzdata python3 py3-pip g++ make
+RUN <<EOF
+  apk --no-cache add python3 build-base make g++ gcc py3-setuptools py3-pip
+  ln -sf /usr/bin/python3 /usr/bin/python
+EOF
 
 RUN npm install -g pnpm
 RUN npm install -g serve

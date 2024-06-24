@@ -3,9 +3,9 @@ services:
     build: .
     container_name: directus-cicd
     volumes:
-      - ../directus_share:/workspace/directus/uploads
+      - "${DIRECTUS_SHARE:-../directus_share}:/workspace/directus/uploads"
     env_file:
-      - ../configs/directus.env
+      - "${DIRECTUS_ENV:-../config/.env}"
     image: sacconazzo/directus-cicd
     restart: always
     ports:
