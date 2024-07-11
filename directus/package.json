@@ -16,8 +16,8 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "directus": "^10.13.0",
-        "directus-extension-api-docs": "^2.0.4",
+        "directus": "^10.13.1",
+        "directus-extension-api-docs": "^2.0.5",
         "find-root": "^1.1.0",
         "fs-extra": "^10.1.0",
         "mysql": "^2.18.1",
