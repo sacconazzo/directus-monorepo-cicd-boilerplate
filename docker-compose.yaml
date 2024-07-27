@@ -1,16 +1,17 @@
+name: directus-monorepo-cicd
 services:
   app:
     build: .
-    container_name: directus-monorepo-cicd
+    # container_name: directus-monorepo-cicd
     volumes:
       - "${DIRECTUS_SHARE:-../directus_share}:/workspace/directus/uploads"
     env_file:
-      - "${DIRECTUS_ENV:-../config/.env}"
+      - "${DIRECTUS_ENV_FILE:-../config/.env}"
     image: sacconazzo/directus-monorepo-cicd
     restart: unless-stopped
     ports:
-      - "${PORT:-8055}:8055"
-      - "${PORT_FE:-5000}:5000"
+      - "${EXTERNAL_PORT:-8055}:8055"
+      - "${EXTERNAL_PORT_FE:-5000}:5000"
 
   db:
     image: mysql:8.0
@@ -19,8 +20,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: directus
-    ports:
-      - 3306:3306
+    # ports:
+    #   - 3306:3306
     volumes:
       - mysql-datavolume:/var/lib/mysql
 
