@@ -69,4 +69,7 @@ pnpm graph
 
 ### Demo
 
-Deployed version to https://directus.sulla.pizza credentials: demo@directus.sulla.pizza / demo
+`origin/main` deployed to:
+
+- https://directus.sulla.pizza credentials: demo@directus.sulla.pizza / demo
+- https://directus-fe.sulla.pizza
