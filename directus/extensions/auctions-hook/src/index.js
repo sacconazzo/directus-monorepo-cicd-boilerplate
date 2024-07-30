@@ -1,11 +1,11 @@
-const { countries } = require('utilities');
+import { countries } from 'utilities';
 
 export default (events, { services }) => {
     const { MailService } = services;
 
     events.filter('users.create', async function (input, _meta) {
         const country = (input.country || 'IT').toUpperCase();
-        if (!countries[country]) throw new InvalidPayloadException(`country ${country} not valid`);
+        if (!countries[country]) throw new Error(`country ${country} not valid`);
 
         input.country = country;
         input.username = input.username || input.email;
