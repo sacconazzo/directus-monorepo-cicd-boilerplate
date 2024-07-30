@@ -66,3 +66,7 @@ Some scripts:
 ```
 pnpm graph
 ```
+
+### Demo
+
+Deployed version to https://directus.sulla.pizza
