@@ -11,8 +11,8 @@ RUN npm install -g serve
 WORKDIR /workspace
 
 RUN mkdir -p \
-    directus/extensions \
-    directus/uploads
+  directus/extensions \
+  directus/uploads
 
 COPY package.json .
 COPY pnpm-*.yaml ./
@@ -23,7 +23,8 @@ COPY directus/extensions/auctions-hook/package.json ./directus/extensions/auctio
 COPY packages/utilities/package.json ./packages/utilities/
 COPY frontend/package.json ./frontend/
 
-RUN pnpm install --prod
+# RUN pnpm install --prod
+RUN pnpm install
 
 COPY . ./
 
