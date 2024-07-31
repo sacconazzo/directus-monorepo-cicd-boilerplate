@@ -23,8 +23,8 @@ COPY directus/extensions/auctions-hook/package.json ./directus/extensions/auctio
 COPY packages/utilities/package.json ./packages/utilities/
 COPY frontend/package.json ./frontend/
 
-# RUN pnpm install --prod
-RUN pnpm install
+RUN pnpm install --prod
+# RUN pnpm install
 
 COPY . ./
 
