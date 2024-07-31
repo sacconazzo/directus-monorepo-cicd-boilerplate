@@ -2,6 +2,13 @@ pipeline {
     agent any
     
     stages {
+        stage('test') {
+            steps {
+                sh 'pnpm install'
+                sh 'pnpm build'
+                sh 'pnpm test'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'docker compose build'
