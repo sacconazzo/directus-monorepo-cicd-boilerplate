@@ -2,16 +2,15 @@ pipeline {
     agent any
     
     stages {
-        stage('Test') {
-            steps {
-                sh 'pnpm install'
-                sh 'pnpm build'
-                sh 'pnpm test'
-            }
-        }
         stage('Build') {
             steps {
                 sh 'docker compose build'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh "docker compose --env-file ${BASE_CONFIG_PATH}${env.JOB_NAME}.env run app pnpm test"
+                sh "docker compose --env-file ${BASE_CONFIG_PATH}${env.JOB_NAME}.env down"
             }
         }
         stage('Deploy') {
