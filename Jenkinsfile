@@ -30,9 +30,7 @@ pipeline {
                         } else {
                             echo "Creating tag for v${VERSION}"
                             sh "git tag -a 'v${VERSION}' -m 'Release ${VERSION}'"
-                            sh '''
-                                git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/sacconazzo/directus-monorepo-cicd-boilerplate.git --tags
-                            '''
+                            sh 'git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/chatbot-services/chatbot-manager.git refs/tags/v' + VERSION
                         }
                     }
                 }
