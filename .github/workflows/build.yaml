@@ -36,9 +36,15 @@ jobs:
           username: sacconazzo
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
-      - name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-          #   platforms: linux/amd64,linux/arm64
-          push: true
-          tags: sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
+      #   - name: Build and push
+      #     uses: docker/build-push-action@v6
+      #     with:
+      #       #   platforms: linux/amd64,linux/arm64
+      #       push: true
+      #       tags: sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
+
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
+
+      - name: Push image
+        run: docker push sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
