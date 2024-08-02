@@ -46,10 +46,9 @@ jobs:
       #       push: true
       #       tags: sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
 
-      - name: Build the Docker image
-        run:
-          docker buildx build . --file Dockerfile --platform linux/amd64,linux/arm64 --tag
-          sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
-
+      - name: Build and Push the Docker image
+        run: |
+          docker buildx build . --file Dockerfile --platform linux/amd64,linux/arm64
+          --tag sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
       - name: Push image
         run: docker push sacconazzo/directus-monorepo-cicd-boilerplate:${{ steps.get_version.outputs.version }}
