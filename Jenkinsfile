@@ -38,8 +38,8 @@ pipeline {
         }
         stage('Cleanup') {
             steps {
-                sh 'docker builder prune -f'
                 sh 'docker image prune -f'
+                sh 'docker builder prune -f'
             }
         }
     }
