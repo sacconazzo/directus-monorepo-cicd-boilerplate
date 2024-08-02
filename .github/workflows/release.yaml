@@ -1,4 +1,4 @@
-name: Release
+name: New Release
 
 on:
   push:
@@ -10,8 +10,8 @@ permissions:
 
 jobs:
   release:
-    name: Release tag
-    runs-on: ubuntu-22.04
+    name: Release from Tag
+    runs-on: ubuntu-latest
     steps:
       - name: Create new release
         env:
