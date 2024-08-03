@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker compose build --platform linux/amd64'
+                sh 'docker compose build --platform linux/arm64'
             }
         }
         stage('Test') {
