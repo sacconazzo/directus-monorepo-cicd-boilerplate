@@ -1,6 +1,6 @@
 {
   "name": "directus-monorepo-cicd-boilerplate",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Giona Righini (sacconazzo)",
   "license": "MIT",
   "description": "directus on google cloud run",
