@@ -12,7 +12,7 @@ name: Docker Image CI
 
 jobs:
   build:
-    name: Build and Publish Image
+    name: Build and Publish Images
     runs-on: ubuntu-latest
 
     steps:
