@@ -1,11 +1,11 @@
 # Back-end server with web interface (byDirectus)
 
-## Initialize
+## Running locally
 
 - create a new db
 - configure `.env` file like `.env.local` in `/directus` folder
 
-## Running on local docker
+## Running on docker
 
 - default env_file for docker compose is `/directus/.env.test`
 
@@ -14,7 +14,7 @@
 docker compose up -d
 ```
 
-## Installation and CI
+## Installation commands
 
 Build all packages:
 
@@ -26,7 +26,6 @@ Preparing db with Directus setup, snapshot and migrations & running service:
 
 ```
 pnpm db:prepare
-pnpm start
 ```
 
 ## Development
