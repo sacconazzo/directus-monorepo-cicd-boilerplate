@@ -3,11 +3,14 @@
 ## Initialize
 
 - create a new db
-- configure `.env` file like .env.example
-  - default for docker compose: `../configs/directus.env`
+- configure `.env` file like `.env.local` in `/directus` folder
+
+## Running on local docker
+
+- default env_file for docker compose is `/directus/.env.test`
 
 ```
-# docker compose --env-file ../configs/.env up -d
+# docker compose --env-file ../yourpath up -d
 docker compose up -d
 ```
 
