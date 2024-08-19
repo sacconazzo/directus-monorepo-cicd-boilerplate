@@ -2,19 +2,12 @@
 
 ## Running locally
 
+### Initialize environment
+
 - create a new db
 - configure `.env` file like `.env.local` in `/directus` folder
 
-## Running on docker
-
-- default env_file for docker compose is `/directus/.env.test`
-
-```
-# docker compose --env-file ../yourpath up -d
-docker compose up -d
-```
-
-## Installation commands
+### Installation commands
 
 Build all packages:
 
@@ -48,7 +41,7 @@ Utilities scripts (create roles migrations, translations, ...):
 pnpm directus-x --help
 ```
 
-#### Others
+### Others
 
 Some scripts:
 
@@ -69,7 +62,16 @@ Some scripts:
 pnpm graph
 ```
 
-### Demo
+## Running on docker
+
+- default env_file for docker compose is `/directus/.env.test`
+
+```
+# docker compose --env-file ../yourpath up -d
+docker compose up -d
+```
+
+## Demo
 
 `origin/main` deployed to:
 
