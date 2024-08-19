@@ -6,7 +6,7 @@ services:
     volumes:
       - "${DIRECTUS_SHARE:-../directus_share}:/workspace/directus/uploads"
     env_file:
-      - "${DIRECTUS_ENV_FILE:-../config/.env}"
+      - "${DIRECTUS_ENV_FILE:-./directus/.env.test}"
     image: sacconazzo/directus-monorepo-cicd
     restart: unless-stopped
     ports:

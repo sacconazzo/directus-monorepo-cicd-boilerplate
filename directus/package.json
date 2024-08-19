@@ -1,6 +1,6 @@
 {
     "name": "directus-node",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "directus on google cloud run",
     "scripts": {
         "lint": "eslint --ignore-path .gitignore --ext .js extensions",
@@ -16,7 +16,7 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "directus": "^10.13.1",
+        "directus": "^10.13.2",
         "directus-extension-api-docs": "^2.1.2",
         "find-root": "^1.1.0",
         "fs-extra": "^10.1.0",
