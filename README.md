@@ -1,5 +1,7 @@
 # Back-end server with web interface (byDirectus)
 
+a directus monorepo boilerplate focused on ci
+
 ## Running locally
 
 ### Initialize environment
