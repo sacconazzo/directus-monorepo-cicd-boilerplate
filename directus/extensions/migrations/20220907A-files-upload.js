@@ -1,9 +1,9 @@
 const files = [
     {
-        id: '93e53670-58fa-4e6f-9628-f424786859fc',
+        id: 'fea039b9-99a9-4a46-aac9-f45c05faa7a6',
         storage: 'local',
-        filename_disk: '93e53670-58fa-4e6f-9628-f424786859fc.jpg',
-        filename_download: 'wp4066843-bumblebee-wallpapers.jpg',
+        filename_disk: 'fea039b9-99a9-4a46-aac9-f45c05faa7a6.jpg',
+        filename_download: '160822-MINIMAL-SEA-4K.png',
         title: 'Wallpaper',
         type: 'image/png',
         folder: null,
@@ -12,7 +12,7 @@ const files = [
         modified_by: null,
         modified_on: new Date(),
         charset: null,
-        filesize: '1749654',
+        filesize: '178362',
         width: 3840,
         height: 2160,
         duration: null,
