@@ -1,6 +1,6 @@
 const settings = {
     project_name: 'SCN API',
-    project_logo: 'EBB42C0E-B56B-4D70-A32F-A31583E29A55',
+    public_background: '93e53670-58fa-4e6f-9628-f424786859fc',
     auth_login_attempts: 25,
     storage_asset_transform: 'all',
     project_descriptor: 'backoffice',
