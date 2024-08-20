@@ -4,20 +4,12 @@ const roles = [
         name: 'BackOffice',
         icon: 'home',
         description: 'Back Office',
-        ip_access: null,
-        enforce_tfa: false,
-        admin_access: false,
-        app_access: true,
     },
     {
         id: 'E8EDAA1E-EBBC-4024-83A6-A2C832AC7D84',
         name: 'Auctioners',
         icon: 'account_box',
         description: 'User subscribed',
-        ip_access: null,
-        enforce_tfa: false,
-        admin_access: false,
-        app_access: false,
     },
 ];
 
