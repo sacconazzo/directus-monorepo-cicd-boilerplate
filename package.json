@@ -18,7 +18,7 @@
   },
   "private": true,
   "dependencies": {
-    "nx": "15.0.10",
-    "@nrwl/nx-cloud": "latest"
+    "@nrwl/nx-cloud": "^19.0.0",
+    "nx": "^19.6.4"
   }
 }
