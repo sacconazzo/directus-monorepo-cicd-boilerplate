@@ -1,6 +1,6 @@
 {
   "name": "directus-monorepo-cicd-boilerplate",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "author": "Giona Righini (sacconazzo)",
   "license": "MIT",
   "description": "directus on google cloud run",
@@ -10,7 +10,7 @@
     "test": "pnpm nx run-many --target=test --output-style=static",
     "build": "pnpm nx run-many --target=build",
     "build:force": "pnpm nx run-many --target=build --skip-nx-cache",
-    "dev": "pnpm nx run-many --target=dev",
+    "dev": "pnpm --parallel dev",
     "db:prepare": "pnpm --filter directus-node db:prepare",
     "start:directus": "pnpm --filter directus-node start",
     "start": "pnpm nx run-many --target=start",
@@ -18,7 +18,7 @@
   },
   "private": true,
   "dependencies": {
-    "@nrwl/nx-cloud": "^19.0.0",
-    "nx": "^19.6.4"
+    "@nrwl/nx-cloud": "^19.1.0",
+    "nx": "^19.7.3"
   }
 }
