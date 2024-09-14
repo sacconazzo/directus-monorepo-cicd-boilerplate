@@ -1,4 +1,4 @@
-FROM node:20.16.0-alpine
+FROM node:20.17.0-alpine
 
 RUN <<EOF
   apk --no-cache add python3 build-base make g++ gcc py3-setuptools py3-pip
