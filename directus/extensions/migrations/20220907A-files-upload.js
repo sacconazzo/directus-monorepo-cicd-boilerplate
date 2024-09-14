@@ -2,7 +2,7 @@ const files = [
     {
         id: 'fea039b9-99a9-4a46-aac9-f45c05faa7a6',
         storage: 'local',
-        filename_disk: 'fea039b9-99a9-4a46-aac9-f45c05faa7a6.jpg',
+        filename_disk: 'fea039b9-99a9-4a46-aac9-f45c05faa7a6.png',
         filename_download: '160822-MINIMAL-SEA-4K.png',
         title: 'Wallpaper',
         type: 'image/png',
