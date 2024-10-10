@@ -18,8 +18,8 @@ COPY package.json .
 COPY pnpm-*.yaml ./
 
 COPY directus/package.json ./directus/
-COPY directus/extensions/auctions/package.json ./directus/extensions/auctions/
-COPY directus/extensions/auctions-hook/package.json ./directus/extensions/auctions-hook/
+COPY directus/extensions/users/package.json ./directus/extensions/users/
+COPY directus/extensions/users-hook/package.json ./directus/extensions/users-hook/
 COPY packages/utilities/package.json ./packages/utilities/
 COPY frontend/package.json ./frontend/
 
