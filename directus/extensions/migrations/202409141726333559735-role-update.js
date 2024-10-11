@@ -1,4 +1,4 @@
-const role = JSON.parse('{"id":"E8EDAA1E-EBBC-4024-83A6-A2C832AC7D84","name":"Auctioners","icon":"account_box","description":"User subscribed","parent":null}');
+const role = JSON.parse('{"id":"E8EDAA1E-EBBC-4024-83A6-A2C832AC7D84","name":"Users","icon":"account_box","description":"User subscribed","parent":null}');
 
 module.exports = {
     up: async knex => {

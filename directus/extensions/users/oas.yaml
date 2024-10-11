@@ -1,14 +1,14 @@
 tags:
-- name: Auctions
+- name: Custom
   description: CustomTag
 paths:
-  "/auctions/test":
+  "/users/test":
     post:
       summary: Test
       description: Test
       tags:
       - Users
-      - Auctions
+      - Custom
       requestBody:
         content:
           application/json:
