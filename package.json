@@ -19,6 +19,6 @@
   "private": true,
   "dependencies": {
     "@nrwl/nx-cloud": "^19.1.0",
-    "nx": "^19.8.4"
+    "nx": "^19.8.14"
   }
 }
