@@ -1,6 +1,6 @@
 import { countries } from 'utilities';
 
-export default (events, { services }) => {
+export default (events, { services, database }) => {
     const { MailService } = services;
 
     events.filter('users.create', async function (input, _meta) {
