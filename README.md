@@ -77,5 +77,5 @@ docker compose up -d
 
 `origin/main` deployed to:
 
-- https://directus.giona.tech credentials: demo@directus.sulla.pizza / demo
+- https://directus.giona.tech credentials: demo@directus.giona.tech / demo
 - https://directus-fe.giona.tech
